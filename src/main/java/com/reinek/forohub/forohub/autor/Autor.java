@@ -25,5 +25,14 @@ public class Autor {
     this.perfil = datosAutor.perfil();
     }
 
+    public Autor actualizarDatos(DatosAutor datosAutor){
+        this.nombre = datosAutor.nombre();
+        this.correo_electronico = datosAutor.correo_electronico();
+        this.contrasena = datosAutor.contrasena();
+        this.perfil = datosAutor.perfil();
+        return this;
+
+    }
+
 
 }

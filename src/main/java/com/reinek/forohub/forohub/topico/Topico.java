@@ -24,7 +24,7 @@ public class Topico {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
-    private Boolean status;
+    private Boolean estado;
     private String titulo;
     private String mensaje;
     @Embedded
@@ -32,12 +32,26 @@ public class Topico {
     private Curso curso;
 
     public Topico(DatosRegistroTopico datosRegistroTopico){
-        this.status = true;
+        this.estado = true;
         this.titulo = datosRegistroTopico.titulo();
         this.mensaje = datosRegistroTopico.mensaje();
         this.autor = new Autor(datosRegistroTopico.autor());
         this.curso = new Curso(datosRegistroTopico.curso());
 
+    }
+    public void atualizarInformacion(DatosActualizacionTopico datos) {
+        if (datos.titulo() != null){
+            this.titulo = datos.titulo();
+        }
+        if (datos.mensaje() != null){
+            this.mensaje = datos.mensaje();
+        }
+        if (datos.autor() != null){
+            this.autor = autor.actualizarDatos(datos.autor());
+        }
+    }
+    public void desactivar() {
+        this.estado = false;
     }
 
 
