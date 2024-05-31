@@ -1,4 +1,4 @@
-package com.reinek.forohub.forohub.topico;
+package com.reinek.forohub.forohub.domain.topico;
 
 public record DatosListadoTopico(
    Long id,

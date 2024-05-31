@@ -1,7 +1,7 @@
-package com.reinek.forohub.forohub.topico;
+package com.reinek.forohub.forohub.domain.topico;
 
-import com.reinek.forohub.forohub.autor.Autor;
-import com.reinek.forohub.forohub.curso.Curso;
+import com.reinek.forohub.forohub.domain.autor.Autor;
+import com.reinek.forohub.forohub.domain.curso.Curso;
 
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
@@ -50,7 +50,7 @@ public class Topico {
             this.autor = autor.actualizarDatos(datos.autor());
         }
     }
-    public void desactivar() {
+    public void remover() {
         this.estado = false;
     }
 

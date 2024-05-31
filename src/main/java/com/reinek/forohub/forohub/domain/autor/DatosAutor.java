@@ -1,4 +1,4 @@
-package com.reinek.forohub.forohub.autor;
+package com.reinek.forohub.forohub.domain.autor;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;

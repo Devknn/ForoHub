@@ -1,7 +1,8 @@
-package com.reinek.forohub.forohub.topico;
+package com.reinek.forohub.forohub.domain.topico;
 
-import com.reinek.forohub.forohub.autor.DatosAutor;
-import com.reinek.forohub.forohub.curso.DatosCurso;
+import com.reinek.forohub.forohub.domain.autor.DatosAutor;
+import com.reinek.forohub.forohub.domain.curso.DatosCurso;
+
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

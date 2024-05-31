@@ -1,4 +1,4 @@
-package com.reinek.forohub.forohub.curso;
+package com.reinek.forohub.forohub.domain.curso;
 
 public enum Categoria {
     FRONTEND,

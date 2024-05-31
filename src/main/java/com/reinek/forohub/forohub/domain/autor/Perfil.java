@@ -1,4 +1,4 @@
-package com.reinek.forohub.forohub.autor;
+package com.reinek.forohub.forohub.domain.autor;
 
 public enum Perfil {
     PERFIL_1,

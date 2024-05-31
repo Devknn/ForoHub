@@ -1,4 +1,4 @@
-package com.reinek.forohub.forohub.curso;
+package com.reinek.forohub.forohub.domain.curso;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;

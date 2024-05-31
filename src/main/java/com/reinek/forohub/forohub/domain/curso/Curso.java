@@ -1,4 +1,4 @@
-package com.reinek.forohub.forohub.curso;
+package com.reinek.forohub.forohub.domain.curso;
 
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.EnumType;
